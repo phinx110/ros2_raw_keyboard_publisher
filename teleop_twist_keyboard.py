@@ -79,10 +79,10 @@ def main(args=None):
 	if args is None:
 		args = sys.argv
 
-	rclpy.init(args)
+	rclpy.init()
 	node = rclpy.create_node('teleop_twist_keyboard')
 		
-	pub = node.create_publisher(Twist, 'cmd_vel', 	qos_profile_default)
+	pub = node.create_publisher(Twist, 'cmd_vel')
 
 	speed = 0.5
 	turn = 1.0
