@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='teleop_twist_keyboard',
+    name='raw_keyboard_publisher',
     version='0.0.0',
     packages=[],
-    py_modules=['teleop_twist_keyboard'],
+    py_modules=['raw_keyboard_publisher'],
     install_requires=['setuptools'],
     maintainer='Rohan Agrawal',
     maintainer_email='rohan@osrfoundation.org',
@@ -20,7 +20,7 @@ setup(
     ),
     entry_points={
         'console_scripts': [
-            'teleop_twist_keyboard = teleop_twist_keyboard:main'
+            'raw_keyboard_publisher = raw_keyboard_publisher:main'
         ],
     },
 )

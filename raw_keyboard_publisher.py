@@ -21,7 +21,7 @@ def getKey():
 
 def main(args=None):
 	rclpy.init()
-	node = rclpy.create_node('teleop_twist_keyboard')
+	node = rclpy.create_node('raw_keyboard_publisher')
 	pub = node.create_publisher(Char, 'raw_keyboard')
 
 	try:
