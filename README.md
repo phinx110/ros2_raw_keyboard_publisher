@@ -1,32 +1,19 @@
-# teleop_twist_keyboard
-Generic Keyboard Teleop for ROS2
+# raw_keyboard_publisher
+Generic Keyboard key stroke publisher for ROS2 in Python
+
+Forked and modified from: rohbotics/ros2_teleop_keyboard
+url: https://github.com/rohbotics/ros2_teleop_keyboard
+
 #Launch
-To run: `teleop_twist_keyboard`
+To run: `ros2 run raw_keyboard_publisher raw_keyboard_publisher`
+
 
 #Usage
+Raw key strokes from the terminal input are published as separate chars to the "/raw_keyboard" topic using the std_msgs/Char messages.
+
 ```
-Reading from the keyboard  and Publishing to Twist!
----------------------------
-Moving around:
-   u    i    o
-   j    k    l
-   m    ,    .
-
-For Holonomic mode (strafing), hold down the shift key:
----------------------------
-   U    I    O
-   J    K    L
-   M    <    >
-
-t : up (+z)
-b : down (-z)
-
-anything else : stop
-
-q/z : increase/decrease max speeds by 10%
-w/x : increase/decrease only linear speed by 10%
-e/c : increase/decrease only angular speed by 10%
-
+Reading from the keyboard and publishing Chars on raw_keyboard topic
+--------------------------
 CTRL-C to quit
 ```
 
