@@ -31,7 +31,7 @@ def main(args=None):
 			if (key == '\x03'):
 				break
 			char = Char()
-			char.data = key
+			char.data = ord(key)
 			pub.publish(char)
 
 	except:
